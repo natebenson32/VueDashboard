@@ -9,11 +9,12 @@
           </div>
         </div>
       </div>
-      <SideNav />
+      <SideNav :open="sidebarOpen" />
       <!-- <div class="footer"></div> -->
     </div>
     <div class="main-container">
       <NavBar @sidebar="sidebarToggle" />
+      <div class="testbox" />
     </div>
   </div>
 </template>
@@ -63,6 +64,12 @@ export default {
   background: rgb(30, 61, 100);
   cursor: pointer;
 }
+.home-btn:hover {
+  background: rgb(39, 72, 112);
+}
+.home-btn:hover .home-container {
+  line-height: 50px;
+}
 .home-container {
   height: 100%;
   display: flex;
@@ -92,5 +99,12 @@ export default {
 }
 .main-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.testbox {
+  width: 100%;
+  flex: 1;
+  background: rgb(241, 241, 241);
 }
 </style>
