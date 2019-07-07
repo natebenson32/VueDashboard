@@ -4,7 +4,9 @@
       <div class="home-btn">
         <div class="home-container">
           <div class="home-icon" />
-          <div class="home-text" :class="{ 'home-closed': !sidebarOpen }">HAVEN</div>
+          <div class="home-text" :class="{ 'home-closed': !sidebarOpen }">
+            HAVEN
+          </div>
         </div>
       </div>
       <SideNav />
